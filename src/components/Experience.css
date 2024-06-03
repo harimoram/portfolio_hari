@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.experience-container {
+  padding: 0px 80px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.experience-heading {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.experience-subheading {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.experience-section {
+  margin-bottom: 60px;
+}
+
+.experience-section h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.experience-section p {
+  font-size: 18px;
+  margin: 5px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.experience-headings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.responsibilities-visuals {
+  display: flex;
+  flex-wrap: nowrap; /* Ensures that the flex items stay on the same line */
+}
+
+.responsibilities {
+  flex: 0 0 70%; /* Takes up 70% of the container width */
+  margin-right: 20px;
+}
+
+.responsibilities h3 {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.responsibilities ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.responsibilities ul li {
+  font-size: 18px;
+  margin: 5px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.visual-highlights {
+  flex: 0 0 30%; /* Takes up 30% of the container width */
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the image horizontally */
+  justify-content: center; /* Center the image vertically */
+}
+
+.visual-highlight {
+  width: 250px; /* Set a fixed width for the circular image */
+  height: 250px; /* Set a fixed height for the circular image */
+  background-color: #d7d7d7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  position: relative;
+  border-radius: 40%; /* Make the container circular */
+  overflow: hidden; /* Hide overflow to ensure circular shape */
+}
+
+.visual-highlight img {
+  width: 100%; /* Allow width to adjust automatically */
+  height: 100%; /* Set height to 100% to ensure the entire height fits in the container */
+  border-radius: 0%; /* Make sure the image itself is also circular */
+}
+
+.visual-highlight:hover {
+  transform: scale(1.05);
+  z-index: 10;
+  border: 2px solid #000;
+}
+
+.hover-text {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #777;
+  font-family: 'Poppins', sans-serif;
+}
+
+.copywrites p {
+  font-size: 15px;
+  text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 900px) {
+  .experience-container {
+    padding: 0 20px;
+  }
+
+  .responsibilities-visuals {
+    flex-direction: column; /* Stack the elements vertically */
+  }
+
+  .visual-highlights {
+    order: -1; /* Move the visual-highlights section above responsibilities */
+    flex: 1 0 auto; /* Allow the section to grow and shrink as needed */
+    margin-left: 0;
+    margin-bottom: 20px; /* Add margin to separate from responsibilities */
+  }
+
+  .responsibilities {
+    flex: 1 0 auto; /* Allow the section to grow and shrink as needed */
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  .visual-highlight {
+    width: 150px; /* Reduce the width for smaller screens */
+    height: 150px; /* Reduce the height for smaller screens */
+  }
+
+  .visual-highlight img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0;
+  }
+
+  .experience-headings h2 {
+    font-size: 30px; /* Adjust the font size as desired */
+  }
+
+  .responsibilities h3 {
+    font-size: 20px;
+  }
+
+  .copywrites p {
+    font-size: 10px;
+  }
+
+}
+

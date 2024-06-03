@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.projects-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 10px 80px;
+}
+
+.projects-heading {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.projects-intro {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap onto multiple lines */
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 10px; /* Add spacing between buttons */
+}
+
+.filter-button {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 5px; /* Add margin to create spacing when buttons wrap */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+}
+
+.filter-button:hover {
+  background-color: lightgray;
+}
+
+.filter-button.active {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  justify-content: center; /* Center align the project cards */
+}
+
+.visa-card {
+  background-color: white;
+  border: 3px solid #dee2e6;
+  border-radius: 5px;
+  padding: 20px;
+  transition: box-shadow 0.5s;
+}
+
+.visa-card:hover {
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1);
+  border-color: #ffe100;
+}
+
+.crime-card {
+  background-color: white;
+  border: 3px solid #dee2e6;
+  border-radius: 5px;
+  padding: 20px;
+  transition: box-shadow 0.3s;
+}
+
+.crime-card:hover {
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1);
+  border-color: green;
+}
+
+.ecommerce-card {
+  background-color: white;
+  border: 3px solid #dee2e6;
+  border-radius: 5px;
+  padding: 20px;
+  transition: box-shadow 0.3s;
+}
+
+.ecommerce-card:hover {
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1);
+  border-color: #fe58ca;
+}
+
+.resort-card {
+  background-color: white;
+  border: 3px solid #dee2e6;
+  border-radius: 5px;
+  padding: 20px;
+  transition: box-shadow 0.3s;
+}
+
+.resort-card:hover {
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1);
+  border-color: #007bff;
+}
+
+.inventory-card {
+  background-color: white;
+  border: 3px solid #dee2e6;
+  border-radius: 5px;
+  padding: 20px;
+  transition: box-shadow 0.3s;
+}
+
+.inventory-card:hover {
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1);
+  border-color: #b8056a;
+}
+
+
+.project-image {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.project-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.project-description {
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+.visa-card .view-more-button {
+  background-color: transparent;
+  color: black;
+  border: 3px solid #ffe100;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.visa-card .view-more-button:hover {
+  background-color: #ffe100;
+  color: #000000;
+}
+
+.crime-card .view-more-button {
+  background-color: transparent;
+  color: black;
+  border: 3px solid green;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.crime-card .view-more-button:hover {
+  background-color: green;
+  color: #000000;
+}
+
+.ecommerce-card .view-more-button {
+  background-color: transparent;
+  color: black;
+  border: 3px solid #fe58ca;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.ecommerce-card .view-more-button:hover {
+  background-color: #fe58ca;
+  color: #fff;
+}
+
+.resort-card .view-more-button {
+  background-color: transparent;
+  color: black;
+  border: 3px solid #007bff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.resort-card .view-more-button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.inventory-card .view-more-button {
+  background-color: transparent;
+  color: black;
+  border: 3px solid #b8056a;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.inventory-card .view-more-button:hover {
+  background-color: #b8056a;
+  color: #fff;
+}
+
+
+
+.project-headline {
+  text-align: justify; /* Justify text alignment */
+  margin: 0 auto; /* Center the paragraph */
+  padding: 10px; /* Add padding for spacing */
+  max-width: auto; /* Optional: set a max-width for better readability */
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+.copywrites p {
+  font-size: 15px;
+  text-align: center;
+}
+
+/* Responsive styles for screens less than 900px */
+@media (max-width: 900px) {
+  .projects-container {
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+  }
+
+  .project-headline {
+    text-align: justify; /* Justify text alignment */
+    padding: 10px 20px; /* Add padding for better spacing */
+    font-size: 16px; /* Adjust font size if needed */
+  }
+
+  .filter-buttons {
+    gap: 5px; /* Reduce gap between buttons */
+  }
+
+  .filter-button {
+    padding: 5px 10px; /* Reduce padding of buttons */
+    font-size: 12px; /* Reduce font size */
+  }
+
+  .project-cards {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center align the project cards */
+  }
+
+  .copywrites p {
+    font-size: 10px;
+  }
+}

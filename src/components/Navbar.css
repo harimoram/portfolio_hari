@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px; /* Adjust padding as needed */
+  background-color: #fff; /* Adjust background color as needed */
+  position: relative;
+}
+
+.navbar-logo img {
+  height: 40px; /* Adjust the logo size as needed */
+}
+
+.menu-icon {
+  display: none; /* Hide the menu icon by default */
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.menu-icon.open .line:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.menu-icon.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.open .line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 100px; /* Adjust gap to ensure equal spacing */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin: 0;
+}
+
+.navbar-links a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 24px; /* Increase font size as needed */
+  padding-bottom: 5px;
+}
+
+.navbar-links a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px; /* Adjust underline thickness */
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-links a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.navbar-links a.active::before {
+  visibility: visible;
+  transform: scaleX(1);
+  animation: bounce 0.3s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(1.2);
+  }
+}
+
+/* Different colors for each link */
+.navbar-links a.home::before {
+  background-color: red;
+}
+
+.navbar-links a.about::before {
+  background-color: blue;
+}
+
+.navbar-links a.projects::before {
+  background-color: green;
+}
+
+.navbar-links a.experience::before {
+  background-color: orange;
+}
+
+.navbar-links a.contact::before {
+  background-color: purple;
+}
+
+/* Responsive styles */
+@media (max-width: 1000px) {
+  .menu-icon {
+    display: flex; /* Show the menu icon on smaller screens */
+    margin-right: 0px;
+  }
+
+  .navbar-links {
+    display: none; /* Hide the navbar links on smaller screens */
+    position: absolute;
+    top: 80px; /* Adjust position from the top */
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    gap: 20px; /* Adjust gap for links */
+    transition: all 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+    padding-bottom: 10px; /* Add extra space below the links */
+    padding-top: 30px;
+  }
+
+  .navbar-links.open {
+    display: flex; /* Show links when menu icon is clicked */
+    max-height: 500px; /* Adjust height as needed */
+    
+  }
+
+  .navbar-links a {
+    font-size: 30px; /* Adjust font size as needed */
+  }
+}
+
+@media (min-width: 1001px) {
+  .menu-icon {
+    display: none; /* Hide the menu icon on larger screens */
+  }
+
+  .navbar-links {
+    display: flex; /* Ensure the navbar links are always displayed on larger screens */
+  }
+}

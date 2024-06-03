@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-content {
+  padding: 0px 80px;
+  max-width: 100%;
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+.about-content {
+  max-width: 100%;
+  padding: 10px 40px;
+}
+
+.about-heading {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  color: #6420AA;
+}
+
+.education-item {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+}
+
+.course-name {
+  font-weight: bold;
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  text-align: left; /* Left align course name */
+}
+
+.university-name {
+  font-style: italic;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  text-align: left; /* Left align university name */
+}
+
+.skills-certifications-container {
+  display: flex;
+  justify-content: space-between; /* Keep items in a row with space between them */
+  align-items: flex-start; /* Align items to the start */
+}
+
+.skills {
+  width: 100%; /* Full width for smaller screens */
+  margin-bottom: 20px;
+}
+
+.certifications {
+  width: 100%; /* Full width for smaller screens */
+}
+
+.skill-category {
+  margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+.skill-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left; /* Center align skill buttons */
+}
+
+.skill-button {
+  border: 2px solid #6f6f6f;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #000;
+  padding: 5px 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 12px; /* Reduced size for non-clickable buttons */
+  cursor: default;
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.duration {
+  font-style: italic;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+/* New class for justified paragraph */
+.justify-text {
+  text-align: justify;
+}
+
+.copywrites p {
+  font-size: 15px;
+  text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .about-content p {
+    text-align: justify; /* Justify align paragraphs */
+  }
+
+  .about-heading {
+    text-align: center; /* Center align heading */
+  }
+
+  .education-item {
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .course-name {
+    text-align: left;
+    display: block; /* Display block for single line */
+  }
+
+  .duration {
+    display: block; /* Display block for single line */
+    text-align: left; /* Left align duration */
+  }
+
+  .university-name {
+    text-align: left; /* Left align university name */
+  }
+
+  .skills-certifications-container {
+    flex-direction: column; /* Stack items in a column */
+    align-items: center; /* Center align items */
+  }
+
+  .copywrites p {
+    font-size: 10px;
+  }
+
+}
+

@@ -1,0 +1,101 @@
+/* Home.css */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 0px; /* Add margin bottom to reduce space */
+}
+
+.highlight{
+  color: blue;
+  transition: color 0.8s ease;
+  font-size: 50px;
+}
+
+.highlight:hover {
+  color: rgb(255, 166, 0); /* Color when hovered */
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-top: 0px;
+  padding-bottom: 80px;
+}
+
+.image-frame {
+  margin-right: 10px; /* Adjust spacing between image and text */
+  height: 100%;
+}
+
+.text {
+  flex: 1; /* Allow text to take remaining space */
+  text-align: center;
+}
+
+.text p {
+  text-align: left; /* Align paragraphs to the left */
+  text-align: justify;
+  font-size: 20px;
+}
+
+
+.text p + p {
+  margin-top: 0px; /* Add margin between paragraphs */
+  border-top: 1px solid rgba(0, 0, 0, 0.3); /* Add divider */
+  padding-top: 16px; /* Add padding above divider */
+}
+
+
+.download-cv-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid rgb(0, 34, 255); /* Blue stroke outline */
+  color: black; /* Black text color */
+  text-decoration: none;
+  transition: border-color 0.3s ease, border-width 0.3s ease; /* Transition for border color and width */
+  border-radius: 8px; /* Border radius */
+}
+
+.download-cv-button:hover {
+  border-color: darkorange; /* Dark orange stroke outline on hover */
+  border-width: 3px; /* Increase border thickness on hover */
+}
+
+.copywrites p {
+  font-size: 15px;
+  text-align: right;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-frame {
+    margin-right: 0;
+    margin-bottom: 0px; /* Add spacing between image and text in mobile view */
+  }
+
+  .text p {
+    font-size: 16px; /* Adjust the font size as desired */
+    text-align: justify;
+  }
+
+  .copywrites p {
+    font-size: 10px;
+  }
+}
+
+
