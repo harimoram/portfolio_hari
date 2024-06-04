@@ -25,7 +25,7 @@ const Home = () => {
           <p className="welcome-text">
           With a Master's in Information Systems and Technology, I excel at transforming data into practical insights and crafting smooth, user-friendly web experiences. From building interactive dashboards to designing sleek websites, I enjoy blending creativity with technical know-how to tackle real-world challenges. 🌐📊
           </p>
-          <a href="https://drive.google.com/file/d/1Shjy0XXxfC8AnA82K9Q_ujew_xKcCj5q/view?usp=sharing" download>View my Resume</a>
+          <a href="https://drive.google.com/file/d/1Shjy0XXxfC8AnA82K9Q_ujew_xKcCj5q/view?usp=sharing" className="download-cv-button"download>View my Resume</a>
         </div>
       </div>
       <div className='copywrites'><p>© by Hari_Moram 2024 </p></div>
