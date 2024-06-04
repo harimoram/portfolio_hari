@@ -5,11 +5,11 @@ const Experience = () => {
   return (
     <div className="experience-container">
       <h1 className="experience-heading">Professional Journey</h1>
-      <p className="experience-subheading">Innovative Contributions and Accomplishments</p>
+      <p className="experience-subheading">Contributions and Accomplishments</p>
       
       <div className="experience-section">
         <div className="experience-headings">
-          <h2>Twisted X</h2>
+          <h2 className='twistedx'>Twisted X</h2>
         </div>
 
         <p><strong>Role:</strong> Software Engineering Intern</p>
@@ -44,7 +44,7 @@ const Experience = () => {
       
       <div className="experience-section">
         <div className="experience-headings">
-          <h2>DXC Technology</h2>
+          <h2 className='dxc'>DXC Technology</h2>
         </div>
 
         <p><strong>Role:</strong> Software Engineer</p>
