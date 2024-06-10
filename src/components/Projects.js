@@ -44,7 +44,56 @@ const Projects = () => {
       image: "inventory.jpg",
       url: "https://github.com/harimoram/Inventory_Management_System",
       cardClass: "inventory-card"
-    }
+    },
+    {
+      title: "Adidas Sales Analysis",
+      description: "Developed a Power BI sales analysis report for Adidas, featuring key metrics and dynamic visualizations. Highlights include sales trends and performance insights.",
+      tags: ["Data Analytics"],
+      image: "adidas_card_visual.jpg",
+      url: "https://app.powerbi.com/view?r=eyJrIjoiYTBjYjYxODItMmNjZC00YjdhLWIwYjUtM2E4MzU5ODk4MzNhIiwidCI6IjcwZGUxOTkyLTA3YzYtNDgwZi1hMzE4LWExYWZjYmEwMzk4MyIsImMiOjN9",
+      cardClass: "adidas-card"
+    },
+    {
+      title: "Customer Churn Analysis",
+      description: "Developed a Power BI Dashboard on bank customer churn analysis, featuring key metrics and dynamic visualizations. Highlights include churn trends and retention insights.",
+      tags: ["Data Analytics"],
+      image: "churn_card_visual.jpg",
+      url: "https://app.powerbi.com/view?r=eyJrIjoiYjNjM2U0NDYtZmVmOS00YTE5LTg5NmYtOTQwM2YyZDc5MDUzIiwidCI6IjcwZGUxOTkyLTA3YzYtNDgwZi1hMzE4LWExYWZjYmEwMzk4MyIsImMiOjN9",
+      cardClass: "churn-card"
+    },
+    {
+      title: "Superstore Sales Analysis",
+      description: "Created a Power BI report analyzing superstore sales, showcasing key performance indicators and interactive visualizations. Focused on sales trends and identifying growth opportunities.",
+      tags: ["Data Analytics"],
+      image: "superstore_card_visual.jpg",
+      url: "https://app.powerbi.com/view?r=eyJrIjoiZDk5NzQzNWEtM2U5Yi00OGE2LTlhZTUtZGQ3ZjNmZjU3NmJlIiwidCI6IjcwZGUxOTkyLTA3YzYtNDgwZi1hMzE4LWExYWZjYmEwMzk4MyIsImMiOjN9",
+      cardClass: "superstore-card"
+    },
+    {
+      title: "Real Estate Landing Page Design",
+      description: "Designed a visually stunning real estate selling landing page on Figma, optimizing for user engagement and conversion. Features sleek interface, captivating visuals, and intuitive navigation for potential buyers.",
+      tags: ["Web Design"],
+      image: "realestate_card_visual.jpg",
+      url: "https://www.figma.com/design/YxbI48zf02T5sM6oxtq9rj/Untitled?node-id=0-1&t=pMVXR2clJkIPgZNR-0",
+      cardClass: "realestate-card"
+    },
+    {
+      title: "Sophisticated Elegance: Royal Watches Landing Page",
+      description: "Immerse in luxury with exquisite royal watches selling landing page, tailored for enthusiasts seeking sophistication and style.",
+      tags: ["Web Design"],
+      image: "watches_card_visual.jpg",
+      url: "https://www.figma.com/design/cHYaDNpe0HXEwwloTU6yTh/Watch-Landing-page?node-id=0-1&t=fRLvs2KvIXhIhd5l-0",
+      cardClass: "watches-card"
+    },
+    {
+      title: "Footwear Emporium: Stylish Shoes Webpage",
+      description: "Designed a visually stunning shoes selling webpage in Figma, blending style and functionality for an immersive shopping experience.",
+      tags: ["Web Design"],
+      image: "shoes_card_visual.jpg",
+      url: "https://www.figma.com/design/cHYaDNpe0HXEwwloTU6yTh/Watch-Landing-page?node-id=0-1&t=fRLvs2KvIXhIhd5l-0",
+      cardClass: "shoes-card"
+    },
+
 
   ];
 

@@ -131,6 +131,83 @@ body {
   border-color: #b8056a;
 }
 
+.adidas-card {
+  background-color: white;
+  border: 3px solid #dee2e6;
+  border-radius: 5px;
+  padding: 20px;
+  transition: box-shadow 0.3s;
+}
+
+.adidas-card:hover {
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1);
+  border-color: #401c57;
+}
+
+.churn-card {
+  background-color: white;
+  border: 3px solid #dee2e6;
+  border-radius: 5px;
+  padding: 20px;
+  transition: box-shadow 0.3s;
+}
+
+.churn-card:hover {
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1);
+  border-color: #f0d07f;
+}
+
+.superstore-card {
+  background-color: white;
+  border: 3px solid #dee2e6;
+  border-radius: 5px;
+  padding: 20px;
+  transition: box-shadow 0.3s;
+}
+
+.superstore-card:hover {
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1);
+  border-color: #2aa2d2;
+}
+
+.realestate-card {
+  background-color: white;
+  border: 3px solid #dee2e6;
+  border-radius: 5px;
+  padding: 20px;
+  transition: box-shadow 0.3s;
+}
+
+.realestate-card:hover {
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1);
+  border-color: #841e9e;
+}
+
+.watches-card {
+  background-color: white;
+  border: 3px solid #dee2e6;
+  border-radius: 5px;
+  padding: 20px;
+  transition: box-shadow 0.3s;
+}
+
+.watches-card:hover {
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1);
+  border-color: #ffaa00;
+}
+
+.shoes-card {
+  background-color: white;
+  border: 3px solid #dee2e6;
+  border-radius: 5px;
+  padding: 20px;
+  transition: box-shadow 0.3s;
+}
+
+.shoes-card:hover {
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1);
+  border-color: #6f00ff;
+}
 
 .project-image {
   width: 100%;
@@ -236,6 +313,107 @@ body {
   color: #fff;
 }
 
+.adidas-card .view-more-button {
+  background-color: transparent;
+  color: black;
+  border: 3px solid #401c57;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.adidas-card .view-more-button:hover {
+  background-color: #401c57;
+  color: #fff;
+}
+
+.churn-card .view-more-button {
+  background-color: transparent;
+  color: black;
+  border: 3px solid #f0d07f;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.churn-card .view-more-button:hover {
+  background-color: #f0d07f;
+  color: #000000;
+}
+
+.superstore-card .view-more-button {
+  background-color: transparent;
+  color: black;
+  border: 3px solid #2aa2d2;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.superstore-card .view-more-button:hover {
+  background-color: #2aa2d2;
+  color: #000000;
+}
+
+.realestate-card .view-more-button {
+  background-color: transparent;
+  color: black;
+  border: 3px solid #841e9e;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.realestate-card .view-more-button:hover {
+  background-color: #841e9e;
+  color: #fff;
+}
+
+.watches-card .view-more-button {
+  background-color: transparent;
+  color: black;
+  border: 3px solid #ffaa00;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.watches-card .view-more-button:hover {
+  background-color: #ffaa00;
+  color: #000000;
+}
+
+.shoes-card .view-more-button {
+  background-color: transparent;
+  color: black;
+  border: 3px solid #6f00ff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.shoes-card .view-more-button:hover {
+  background-color: #6f00ff;
+  color: #fff;
+}
 
 
 .project-headline {
