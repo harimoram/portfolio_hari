@@ -90,7 +90,7 @@ const Projects = () => {
       description: "Designed a visually stunning shoes selling webpage in Figma, blending style and functionality for an immersive shopping experience.",
       tags: ["Web Design"],
       image: "shoes_card_visual.jpg",
-      url: "https://www.figma.com/design/cHYaDNpe0HXEwwloTU6yTh/Watch-Landing-page?node-id=0-1&t=fRLvs2KvIXhIhd5l-0",
+      url: "https://www.figma.com/design/MhPumvt5NW9UNAT1Ct2DFP/Untitled?node-id=0-1&t=vY5M0eiYnMqkGCNs-0",
       cardClass: "shoes-card"
     },
 
